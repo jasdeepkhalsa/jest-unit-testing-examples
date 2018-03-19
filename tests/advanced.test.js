@@ -30,7 +30,7 @@ test('ensure that when the getData function is called, data comes back as a resp
   expect(sut.data).toEqual(data); // Initially no data
 
   sut.getData().then((data) => {
-    expect(spy).toHaveBeenCalled();
+    expect(spy).toHaveBeenCalledTimes(1); // Make sure it's only called once
     expect(sut.data).toEqual(mockGitHubData); // Now there's data
   });
 });

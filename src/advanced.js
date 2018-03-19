@@ -8,12 +8,16 @@ class Advanced {
     this.data = {};
   }
 
+  // This function's job is to fetch the data from the const URL
+  // and pass it to the renderData function
   getData() {
     return this.ajax(URL)
         .then((response) => response.json())
         .then((data) => this.renderData(data));
   }
 
+  // This function checks to make sure a particular property of data exists
+  // and if so, sets the data to the property this.data
   renderData(data) {
     if (data.feeds_url) {
       this.data = data;
