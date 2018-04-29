@@ -14,5 +14,8 @@
     "test:watch": "jest --watch"
   },
   "author": "Jasdeep Khalsa",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "npm": "^6.0.0"
+  }
 }
