@@ -19,7 +19,7 @@
   "license": "MIT",
   "dependencies": {
     "npm": "^6.6.0",
-    "snyk": "^1.143.1"
+    "snyk": "^1.230.5"
   },
   "snyk": true
 }
